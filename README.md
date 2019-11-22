@@ -19,7 +19,7 @@ To write your custom contracts, import it and attach it to the string type:
 ```solidity
 pragma solidity ^0.5.0;
 
-import 'solidity-string-util/contracts/StringUtil.sol';
+import "solidity-string-util/contracts/StringUtil.sol";
 
 contract YourContract {
     using StringUtil for string;
