@@ -1,0 +1,36 @@
+{
+  "name": "solidity-string-util",
+  "version": "0.0.1",
+  "description": "A simply Solidity library for common string operations",
+  "main": "truffle-config.js",
+  "devDependencies": {
+    "ethlint": "^1.2.5",
+    "ganache-cli": "^6.7.0",
+    "solc": "0.5.13",
+    "solidity-coverage": "^0.6.7",
+    "truffle": "^5.1.0"
+  },
+  "scripts": {
+    "coverage": "solidity-coverage",
+    "lint": "solium -d contracts",
+    "test": "scripts/executeTests.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IoBuilders/solidity-string-util.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "eth",
+    "string",
+    "hash",
+    "empty"
+  ],
+  "author": "tech@io.builders",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IoBuilders/solidity-string-util/issues"
+  },
+  "homepage": "https://github.com/IoBuilders/solidity-string-util#readme"
+}
