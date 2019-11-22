@@ -2,24 +2,20 @@ sudo: required
 dist: xenial
 language: node_js
 node_js:
-  - '10'
-
+- '10'
 install:
-  - npm install -g coveralls
-  - npm install
-
+- npm install -g coveralls
+- npm install
 script:
-  - npm run lint
-  - npm test
-
+- npm run lint
+- npm test
 after_script:
-  - npm run coverage && cat coverage/lcov.info | coveralls
-
+- npm run coverage && cat coverage/lcov.info | coveralls
 deploy:
   provider: npm
   email: tech@io.builders
   api_key:
-    secure: B3E58zBW4haWX17aVem3Nv6GvvpcOEfe10pG2sxFOkoAIBhrE8U4FCeT7dSVWvRBfqGWbmFNp8INnT41FZlw9GbTb7zThQAa7KfJ0+GVjZ/0zuNzx5lO/raW2MVnB/GLeaEVResU5UDB2o6ZgrkkJbFMjuFEpDHl2WrjBmDdcud+6lgTOPjoTDuX7e8P+Vgj5yQ8iQ61NQH9CxHzvFGCf9gL4vLvvy8rcMKQ59uWU5Pf6FkiELmkkCkXfdCvk5aHlwZhsUaGjx6MpHxsFFeIvZVjAuIfLXKVBM54fLXkWte4nnUxRxjISW8oSMqwihY3wnNl4GgDcYZx82zqrwMh+q0b4GfGZaIgEAjFnPpySdqfhq8ctXd6hUUmjX0yHwUL3kepRFmPuELGgJSS08NsIUnGDHiEOUCOx67dFOMZnJonqFe+deCF5H4ve+qPy0TFyHLnQNvp3a71Vm/o4n9nzudBHEqSoaTgwDFeHO652na2KsKSvnQT9SESzZSOdVWb3CGkYMRQw+K0vpM/77xEv1sZl6W4PKogn/K3TvZASUVLss99jLjcnN2deMfzpGUKStpYqiTap1MFoGKZK1IOS2jJxhabDfj5xJHbp1v2YJnFlfPq1z2vRMqX9D80bDfVVvQEEPgzGHNYeGfrBtT2IsvcMQtFDvzNDwTjDVhMrtE=
+    secure: yyqm6XPYnyEuEgYFTmC3Lm/tbuxy2kktmI7G9lZwutc9t9E40I0WNRFU9f3+/jh+F5u4MPrnhuFipEEV6HcalYhePr47NeiFvzlpihbt9NK/0/jdRAn4WePenBw+1wSlLf/HEWlYu7jEp/3yK2Ptn+YDcJduRMel5Vefwg2K1Yfg4avMoToTcMPoNVM9oEhkyoFxUiHpT+1VoUJVSansQnzsLg7mX5mHdEjRRx/0HRWZ0SoWCVDf94gGVSY4L6JXDbLyT53G+CorDC/3+LJoI/klJW7ghMSUodTLjehuOWHUErWimEh2GnEk6ZsQe/9RboaRQkZqeydA0ht6VKBlHkhpwdg1DBLZmqelJDy7iXVc8FdLpylCZInjELb3T5TUp40SVepsY/yXBX9FDlyBlOH6QBe9+mtaC+m+TB/5f6UPBhbkVguiC7JzX4ny29307MM1jschJs1rUCS1AO5nWnYY2Val7K5VS7aQs0lSPidEQb0aBuTP9Xi+P8QIquk1Sgd6fznKnsaHUzHj8cj/m/nefQ2KHWXRO+bNO/OUzTGTMRMWXb9czVh/ODEzLjz4JvFJn832M5qVB+afpg8B0g8/3aAL+AQUSaKAfp/PNSF7dxPaOuPRr0RuMu4NS8dKo9YbcUbMg5XKRt48//wTCmFwnZS7mMKwrql1UortQRw=
   on:
     tags: true
     branch: master
