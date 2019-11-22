@@ -1,6 +1,6 @@
 {
   "name": "solidity-string-util",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simply Solidity library for common string operations",
   "main": "truffle-config.js",
   "devDependencies": {
